@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543016D82BA219115B3991AD /* Pods_Log_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */; };
 		B2F42CB81FB4190500E65C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CB71FB4190500E65C27 /* AppDelegate.swift */; };
-		B2F42CBA1FB4190500E65C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CB91FB4190500E65C27 /* ViewController.swift */; };
+		B2F42CBA1FB4190500E65C27 /* Log Reader ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */; };
 		B2F42CBD1FB4190500E65C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F42CBB1FB4190500E65C27 /* Main.storyboard */; };
 		B2F42CBF1FB4190500E65C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F42CBE1FB4190500E65C27 /* Assets.xcassets */; };
 		B2F42CC21FB4190500E65C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */; };
+		B2F42CCE1FB41EA000E65C27 /* Utility Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CCD1FB41EA000E65C27 /* Utility Library.swift */; };
+		B2F42CD41FB41F0200E65C27 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CD31FB41F0200E65C27 /* Alert.swift */; };
+		B2F42CD61FB4271A00E65C27 /* Scorecard UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CD51FB4271A00E65C27 /* Scorecard UI.swift */; };
+		B2F42CD81FB428EF00E65C27 /* String Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CD71FB428EF00E65C27 /* String Extensions.swift */; };
+		B2F42CDC1FB4297600E65C27 /* Config Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CDB1FB4297600E65C27 /* Config Class.swift */; };
+		B2F42CDE1FB4312100E65C27 /* RabbitMQ Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1181772E46E3BCDC68377560 /* Pods-Log Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Log Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader.release.xcconfig"; sourceTree = "<group>"; };
 		B2F42CB41FB4190500E65C27 /* Log Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F42CB71FB4190500E65C27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2F42CB91FB4190500E65C27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log Reader ViewController.swift"; sourceTree = "<group>"; };
 		B2F42CBC1FB4190500E65C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2F42CBE1FB4190500E65C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F42CC11FB4190500E65C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F42CC31FB4190500E65C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F42CCD1FB41EA000E65C27 /* Utility Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility Library.swift"; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/Utility Library.swift"; sourceTree = "<group>"; };
+		B2F42CD31FB41F0200E65C27 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/Alert.swift"; sourceTree = "<group>"; };
+		B2F42CD51FB4271A00E65C27 /* Scorecard UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Scorecard UI.swift"; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/Scorecard UI.swift"; sourceTree = "<group>"; };
+		B2F42CD71FB428EF00E65C27 /* String Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String Extensions.swift"; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/String Extensions.swift"; sourceTree = "<group>"; };
+		B2F42CDB1FB4297600E65C27 /* Config Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config Class.swift"; sourceTree = "<group>"; };
+		B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RabbitMQ Reader.swift"; sourceTree = "<group>"; };
+		BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Log_Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE056BA8599359F9B44FCEB7 /* Pods-Log Reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Log Reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543016D82BA219115B3991AD /* Pods_Log_Reader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		058ED95D3736BDF1C0B2A218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE056BA8599359F9B44FCEB7 /* Pods-Log Reader.debug.xcconfig */,
+				1181772E46E3BCDC68377560 /* Pods-Log Reader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4953C490977081CD2F3D9A0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2F42CAB1FB4190500E65C27 = {
 			isa = PBXGroup;
 			children = (
 				B2F42CB61FB4190500E65C27 /* Log Reader */,
 				B2F42CB51FB4190500E65C27 /* Products */,
+				058ED95D3736BDF1C0B2A218 /* Pods */,
+				4953C490977081CD2F3D9A0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +91,17 @@
 			isa = PBXGroup;
 			children = (
 				B2F42CB71FB4190500E65C27 /* AppDelegate.swift */,
-				B2F42CB91FB4190500E65C27 /* ViewController.swift */,
 				B2F42CBB1FB4190500E65C27 /* Main.storyboard */,
+				B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */,
+				B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */,
+				B2F42CCD1FB41EA000E65C27 /* Utility Library.swift */,
+				B2F42CD31FB41F0200E65C27 /* Alert.swift */,
+				B2F42CD51FB4271A00E65C27 /* Scorecard UI.swift */,
+				B2F42CD71FB428EF00E65C27 /* String Extensions.swift */,
 				B2F42CBE1FB4190500E65C27 /* Assets.xcassets */,
 				B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */,
 				B2F42CC31FB4190500E65C27 /* Info.plist */,
+				B2F42CDB1FB4297600E65C27 /* Config Class.swift */,
 			);
 			path = "Log Reader";
 			sourceTree = "<group>";
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2F42CC61FB4190500E65C27 /* Build configuration list for PBXNativeTarget "Log Reader" */;
 			buildPhases = (
+				D8D83F08C21A450A4BB69ACA /* [CP] Check Pods Manifest.lock */,
 				B2F42CB01FB4190500E65C27 /* Sources */,
 				B2F42CB11FB4190500E65C27 /* Frameworks */,
 				B2F42CB21FB4190500E65C27 /* Resources */,
+				B4A3F0FFEC2D3BFEA5D3ACF4 /* [CP] Embed Pods Frameworks */,
+				6589E29F5B9EEC0ED5D5AD1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +176,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6589E29F5B9EEC0ED5D5AD1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A3F0FFEC2D3BFEA5D3ACF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework",
+				"${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKVValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMQClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D83F08C21A450A4BB69ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Log Reader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2F42CB01FB4190500E65C27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F42CBA1FB4190500E65C27 /* ViewController.swift in Sources */,
+				B2F42CBA1FB4190500E65C27 /* Log Reader ViewController.swift in Sources */,
+				B2F42CD61FB4271A00E65C27 /* Scorecard UI.swift in Sources */,
+				B2F42CCE1FB41EA000E65C27 /* Utility Library.swift in Sources */,
+				B2F42CD41FB41F0200E65C27 /* Alert.swift in Sources */,
+				B2F42CDE1FB4312100E65C27 /* RabbitMQ Reader.swift in Sources */,
+				B2F42CDC1FB4297600E65C27 /* Config Class.swift in Sources */,
 				B2F42CB81FB4190500E65C27 /* AppDelegate.swift in Sources */,
+				B2F42CD81FB428EF00E65C27 /* String Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +381,7 @@
 		};
 		B2F42CC71FB4190500E65C27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE056BA8599359F9B44FCEB7 /* Pods-Log Reader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +396,7 @@
 		};
 		B2F42CC81FB4190500E65C27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1181772E46E3BCDC68377560 /* Pods-Log Reader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

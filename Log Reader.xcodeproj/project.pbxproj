@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		543016D82BA219115B3991AD /* Pods_Log_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */; };
+		B2B3EAD21FC91DA7005E7989 /* String Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */; };
+		B2B3EAD31FC91DA7005E7989 /* Scorecard UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */; };
+		B2B3EAD41FC91DA7005E7989 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EAD01FC91DA7005E7989 /* Alert.swift */; };
+		B2B3EAD51FC91DA7005E7989 /* Utility Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EAD11FC91DA7005E7989 /* Utility Library.swift */; };
 		B2F42CB81FB4190500E65C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CB71FB4190500E65C27 /* AppDelegate.swift */; };
 		B2F42CBA1FB4190500E65C27 /* Log Reader ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */; };
 		B2F42CBD1FB4190500E65C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F42CBB1FB4190500E65C27 /* Main.storyboard */; };
 		B2F42CBF1FB4190500E65C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F42CBE1FB4190500E65C27 /* Assets.xcassets */; };
 		B2F42CC21FB4190500E65C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */; };
-		B2F42CCE1FB41EA000E65C27 /* Utility Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CCD1FB41EA000E65C27 /* Utility Library.swift */; };
-		B2F42CD41FB41F0200E65C27 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CD31FB41F0200E65C27 /* Alert.swift */; };
-		B2F42CD61FB4271A00E65C27 /* Scorecard UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CD51FB4271A00E65C27 /* Scorecard UI.swift */; };
-		B2F42CD81FB428EF00E65C27 /* String Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CD71FB428EF00E65C27 /* String Extensions.swift */; };
 		B2F42CDC1FB4297600E65C27 /* Config Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CDB1FB4297600E65C27 /* Config Class.swift */; };
 		B2F42CDE1FB4312100E65C27 /* RabbitMQ Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1181772E46E3BCDC68377560 /* Pods-Log Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Log Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader.release.xcconfig"; sourceTree = "<group>"; };
+		B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String Extensions.swift"; sourceTree = "<group>"; };
+		B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scorecard UI.swift"; sourceTree = "<group>"; };
+		B2B3EAD01FC91DA7005E7989 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		B2B3EAD11FC91DA7005E7989 /* Utility Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utility Library.swift"; sourceTree = "<group>"; };
 		B2F42CB41FB4190500E65C27 /* Log Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F42CB71FB4190500E65C27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log Reader ViewController.swift"; sourceTree = "<group>"; };
@@ -30,10 +34,6 @@
 		B2F42CBE1FB4190500E65C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F42CC11FB4190500E65C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F42CC31FB4190500E65C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2F42CCD1FB41EA000E65C27 /* Utility Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Utility Library.swift"; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/Utility Library.swift"; sourceTree = "<group>"; };
-		B2F42CD31FB41F0200E65C27 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/Alert.swift"; sourceTree = "<group>"; };
-		B2F42CD51FB4271A00E65C27 /* Scorecard UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Scorecard UI.swift"; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/Scorecard UI.swift"; sourceTree = "<group>"; };
-		B2F42CD71FB428EF00E65C27 /* String Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String Extensions.swift"; path = "../../Contract Whist Scorecard/Contract Whist Scorecard/String Extensions.swift"; sourceTree = "<group>"; };
 		B2F42CDB1FB4297600E65C27 /* Config Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config Class.swift"; sourceTree = "<group>"; };
 		B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RabbitMQ Reader.swift"; sourceTree = "<group>"; };
 		BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Log_Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,17 +91,17 @@
 			isa = PBXGroup;
 			children = (
 				B2F42CB71FB4190500E65C27 /* AppDelegate.swift */,
+				B2F42CBE1FB4190500E65C27 /* Assets.xcassets */,
+				B2F42CC31FB4190500E65C27 /* Info.plist */,
+				B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */,
 				B2F42CBB1FB4190500E65C27 /* Main.storyboard */,
 				B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */,
 				B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */,
-				B2F42CCD1FB41EA000E65C27 /* Utility Library.swift */,
-				B2F42CD31FB41F0200E65C27 /* Alert.swift */,
-				B2F42CD51FB4271A00E65C27 /* Scorecard UI.swift */,
-				B2F42CD71FB428EF00E65C27 /* String Extensions.swift */,
-				B2F42CBE1FB4190500E65C27 /* Assets.xcassets */,
-				B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */,
-				B2F42CC31FB4190500E65C27 /* Info.plist */,
 				B2F42CDB1FB4297600E65C27 /* Config Class.swift */,
+				B2B3EAD01FC91DA7005E7989 /* Alert.swift */,
+				B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */,
+				B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */,
+				B2B3EAD11FC91DA7005E7989 /* Utility Library.swift */,
 			);
 			path = "Log Reader";
 			sourceTree = "<group>";
@@ -239,14 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B3EAD21FC91DA7005E7989 /* String Extensions.swift in Sources */,
+				B2B3EAD51FC91DA7005E7989 /* Utility Library.swift in Sources */,
 				B2F42CBA1FB4190500E65C27 /* Log Reader ViewController.swift in Sources */,
-				B2F42CD61FB4271A00E65C27 /* Scorecard UI.swift in Sources */,
-				B2F42CCE1FB41EA000E65C27 /* Utility Library.swift in Sources */,
-				B2F42CD41FB41F0200E65C27 /* Alert.swift in Sources */,
 				B2F42CDE1FB4312100E65C27 /* RabbitMQ Reader.swift in Sources */,
 				B2F42CDC1FB4297600E65C27 /* Config Class.swift in Sources */,
 				B2F42CB81FB4190500E65C27 /* AppDelegate.swift in Sources */,
-				B2F42CD81FB428EF00E65C27 /* String Extensions.swift in Sources */,
+				B2B3EAD31FC91DA7005E7989 /* Scorecard UI.swift in Sources */,
+				B2B3EAD41FC91DA7005E7989 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

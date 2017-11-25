@@ -20,6 +20,15 @@ class LogReaderViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var naviagationItem: UINavigationItem!
     @IBOutlet private weak var messagesTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    // MARK: - IB Actions ============================================================================== -
+    
+    @IBAction func bottomClicked(_ sender: UIButton) {
+        if filteredEntries.count > 0 {
+            messagesTableView.scrollToRow(at: IndexPath(row: filteredEntries.count - 1, section: 0), at: .bottom, animated: true)
+        }
+    }
     
     // MARK: - View Overrides ========================================================================== -
     
@@ -27,6 +36,8 @@ class LogReaderViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         reader = RabbitMQReader(queueUUID: Config.rabbitMQLogQueue, handler: self.didReceiveMessage)
         filteredEntries = entries
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = searchBar.barTintColor?.cgColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,11 +87,27 @@ class LogReaderViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - Data Handlers ========================================================================= -
 
     func didReceiveMessage(deviceName: String?, timestamp: String?, message: String) {
+        if entries.count > 1000 {
+            // Remove first entry from total list
+            entries.remove(at: 0)
+            
+            if self.match(entry: entries[0]) {
+                // Currently displayed - remove it
+                messagesTableView.beginUpdates()
+                filteredEntries.remove(at: 0)
+                messagesTableView.deleteRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
+                messagesTableView.endUpdates()
+            }
+        }
+        
+        // Add to total list
         let entry = Entry(deviceName: deviceName, timestamp: timestamp, message: message)
+        entries.append(entry)
+        
         if match(entry: entry) {
-            let indexPath = IndexPath(row: entries.count, section: 0)
-            messagesTableView.beginUpdates()
-            entries.append(entry)
+            // Gets past filter - add to the currently displayed list
+            let indexPath = IndexPath(row: filteredEntries.count, section: 0)
+            messagesTableView.beginUpdates()    
             filteredEntries.append(entry)
             messagesTableView.insertRows(at: [indexPath], with: .automatic)
             messagesTableView.endUpdates()

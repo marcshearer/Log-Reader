@@ -14,7 +14,7 @@ class Config {
     public static let rabbitMQLogQueue = "WhistLogger"
 
     // Choose which rabbitMQ server to use in development mode
-    private static let rabbitMQUri_DevMode: RabbitMQUriDevMode = .localhost
+    private static let rabbitMQUri_DevMode: RabbitMQUriDevMode = .localhost             // .amqpServer
     
     // Use descriptive rabbitMQ session/connection IDs
     public static let rabbitMQ_DescriptiveIDs = false
@@ -38,9 +38,12 @@ class Config {
             } else if rabbitMQUri_DevMode == .myServer {
                 return "amqp://marcshearer:jonathan@marcs-mbp/test"
             } else {
-                return "amqp://chpklnuo:B543QfEbX0Yo4P4ey2ccA9yMqczZyeh_@swan.rmq.cloudamqp.com/chpklnuo"
+                return "amqp"
             }
         }
     }
+    
+    
+    
 }
 

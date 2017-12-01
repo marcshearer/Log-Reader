@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		543016D82BA219115B3991AD /* Pods_Log_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */; };
+		B202A05E1FCF41CA0070D5DC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202A05D1FCF41CA0070D5DC /* CloudKit.framework */; };
 		B2B3EAD21FC91DA7005E7989 /* String Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */; };
 		B2B3EAD31FC91DA7005E7989 /* Scorecard UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */; };
 		B2B3EAD41FC91DA7005E7989 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B3EAD01FC91DA7005E7989 /* Alert.swift */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		1181772E46E3BCDC68377560 /* Pods-Log Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Log Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Log Reader/Pods-Log Reader.release.xcconfig"; sourceTree = "<group>"; };
+		B202A05C1FCF41C40070D5DC /* Log Reader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Log Reader.entitlements"; sourceTree = "<group>"; };
+		B202A05D1FCF41CA0070D5DC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String Extensions.swift"; sourceTree = "<group>"; };
 		B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scorecard UI.swift"; sourceTree = "<group>"; };
 		B2B3EAD01FC91DA7005E7989 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543016D82BA219115B3991AD /* Pods_Log_Reader.framework in Frameworks */,
+				B202A05E1FCF41CA0070D5DC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +68,44 @@
 		4953C490977081CD2F3D9A0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B202A05D1FCF41CA0070D5DC /* CloudKit.framework */,
 				BEC2BF50403DF5BD06D44225 /* Pods_Log_Reader.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B202A05F1FD0F4DA0070D5DC /* Standard Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2F42CB71FB4190500E65C27 /* AppDelegate.swift */,
+				B202A05C1FCF41C40070D5DC /* Log Reader.entitlements */,
+				B2F42CBE1FB4190500E65C27 /* Assets.xcassets */,
+				B2F42CC31FB4190500E65C27 /* Info.plist */,
+				B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */,
+			);
+			name = "Standard Components";
+			sourceTree = "<group>";
+		};
+		B202A0601FD0F5020070D5DC /* Utility Classes (from Whist) */ = {
+			isa = PBXGroup;
+			children = (
+				B2B3EAD01FC91DA7005E7989 /* Alert.swift */,
+				B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */,
+				B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */,
+				B2B3EAD11FC91DA7005E7989 /* Utility Library.swift */,
+			);
+			name = "Utility Classes (from Whist)";
+			sourceTree = "<group>";
+		};
+		B202A0611FD0F5460070D5DC /* Log Reader */ = {
+			isa = PBXGroup;
+			children = (
+				B2F42CBB1FB4190500E65C27 /* Main.storyboard */,
+				B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */,
+				B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */,
+				B2F42CDB1FB4297600E65C27 /* Config Class.swift */,
+			);
+			name = "Log Reader";
 			sourceTree = "<group>";
 		};
 		B2F42CAB1FB4190500E65C27 = {
@@ -90,18 +129,9 @@
 		B2F42CB61FB4190500E65C27 /* Log Reader */ = {
 			isa = PBXGroup;
 			children = (
-				B2F42CB71FB4190500E65C27 /* AppDelegate.swift */,
-				B2F42CBE1FB4190500E65C27 /* Assets.xcassets */,
-				B2F42CC31FB4190500E65C27 /* Info.plist */,
-				B2F42CC01FB4190500E65C27 /* LaunchScreen.storyboard */,
-				B2F42CBB1FB4190500E65C27 /* Main.storyboard */,
-				B2F42CB91FB4190500E65C27 /* Log Reader ViewController.swift */,
-				B2F42CDD1FB4312100E65C27 /* RabbitMQ Reader.swift */,
-				B2F42CDB1FB4297600E65C27 /* Config Class.swift */,
-				B2B3EAD01FC91DA7005E7989 /* Alert.swift */,
-				B2B3EACF1FC91DA7005E7989 /* Scorecard UI.swift */,
-				B2B3EACE1FC91DA7005E7989 /* String Extensions.swift */,
-				B2B3EAD11FC91DA7005E7989 /* Utility Library.swift */,
+				B202A05F1FD0F4DA0070D5DC /* Standard Components */,
+				B202A0611FD0F5460070D5DC /* Log Reader */,
+				B202A0601FD0F5020070D5DC /* Utility Classes (from Whist) */,
 			);
 			path = "Log Reader";
 			sourceTree = "<group>";
@@ -142,6 +172,14 @@
 					B2F42CB31FB4190500E65C27 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -384,7 +422,9 @@
 			baseConfigurationReference = DE056BA8599359F9B44FCEB7 /* Pods-Log Reader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Log Reader/Log Reader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T7CT2S464;
 				INFOPLIST_FILE = "Log Reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MarcShearer.Log-Reader";
@@ -399,7 +439,9 @@
 			baseConfigurationReference = 1181772E46E3BCDC68377560 /* Pods-Log Reader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Log Reader/Log Reader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T7CT2S464;
 				INFOPLIST_FILE = "Log Reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MarcShearer.Log-Reader";

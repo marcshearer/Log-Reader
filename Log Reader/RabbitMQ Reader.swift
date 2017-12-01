@@ -15,7 +15,7 @@ public class RabbitMQReader {
     private weak var channel: RMQChannel!
     private weak var queue: RMQQueue!
     private weak var exchange: RMQExchange!
-    private var rabbitMQUri: String = Config.rabbitMQUri
+    private var rabbitMQUri: String
     private var _queueUUID: String!
     public var queueUUID: String! {
         get {
@@ -23,9 +23,10 @@ public class RabbitMQReader {
         }
     }
 
-    init(queueUUID: String, handler: @escaping (String?, String?, String)->()) {
+    init(uri: String, queueUUID: String, handler: @escaping (String?, String?, String)->()) {
+        self.rabbitMQUri = uri
         self._queueUUID = queueUUID
-        self.connection = RMQConnection(uri: self.rabbitMQUri, delegate: RMQConnectionDelegateLogger())
+        self.connection = RMQConnection(uri: uri, delegate: RMQConnectionDelegateLogger())
         connection.start()
         self.channel = self.connection.createChannel()
         self.queue = self.channel.queue("", options: .exclusive)

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class LogReaderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
@@ -34,17 +35,39 @@ class LogReaderViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        reader = RabbitMQReader(queueUUID: Config.rabbitMQLogQueue, handler: self.didReceiveMessage)
+        let rabbitMQUri = Config.rabbitMQUri
+        if rabbitMQUri == "amqp" {
+            self.getRabbitMQUri()
+        } else {
+            self.startQueue(uri: rabbitMQUri)
+        }
+        
         filteredEntries = entries
         searchBar.layer.borderWidth = 1
         searchBar.layer.borderColor = searchBar.barTintColor?.cgColor
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func getRabbitMQUri() {
+        let cloudContainer = CKContainer.default()
+        let publicDatabase = cloudContainer.publicCloudDatabase
+        let query = CKQuery(recordType: "Config", predicate: NSPredicate(value: true))
+        let queryOperation = CKQueryOperation(query: query)
+        queryOperation.queuePriority = .veryHigh
+        queryOperation.recordFetchedBlock = { (record) -> Void in
+            
+            let cloudObject: CKRecord = record
+            if let rabbitMQUri = Utility.objectString(cloudObject: cloudObject, forKey: "rabbitMQUri") {
+                self.startQueue(uri: rabbitMQUri)
+            }
+        }
+        
+        // Execute the query
+        publicDatabase.add(queryOperation)
     }
     
+    public func startQueue(uri: String) {
+        reader = RabbitMQReader(uri: uri, queueUUID: Config.rabbitMQLogQueue, handler: self.didReceiveMessage)
+    }
     
     // MARK: - TableView Overrides ===================================================================== -
     

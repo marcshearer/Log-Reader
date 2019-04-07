@@ -14,7 +14,7 @@ class Config {
     public static let rabbitMQLogQueue = "WhistLogger"
 
     // Choose which rabbitMQ server to use in development mode
-    private static let rabbitMQUri_DevMode: RabbitMQUriDevMode = .localhost             // .amqpServer
+    private static let rabbitMQUri_DevMode: RabbitMQUriDevMode = .amqpServer
     
     // Use descriptive rabbitMQ session/connection IDs
     public static let rabbitMQ_DescriptiveIDs = false
